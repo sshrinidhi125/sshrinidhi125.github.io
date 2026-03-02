@@ -5,110 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background-color: #f4f6f9;
+            background-color: #f8f9fb;
             color: #333;
             line-height: 1.6;
         }
 
-        nav {
-            background: #111827;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav h2 {
-            color: white;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #60a5fa;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #3b82f6, #6366f1);
+        header {
+            background-color: #1f2937;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 30px 20px;
         }
 
-        .hero h1 {
-            font-size: 40px;
+        header h1 {
+            margin: 0;
         }
 
-        .hero p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-
-        .linkedin-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #0A66C2;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .linkedin-btn:hover {
-            background: #004182;
+        header p {
+            margin: 5px 0;
         }
 
         section {
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: auto;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
         h2 {
-            text-align: center;
-            margin-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
             color: #1f2937;
         }
 
-        .card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-        }
-
         ul {
-            margin-top: 10px;
             padding-left: 20px;
         }
 
+        .project {
+            margin-top: 20px;
+        }
+
+        .certificates {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .certificates img {
+            width: 280px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
         footer {
-            background: #111827;
-            color: white;
             text-align: center;
-            padding: 20px;
+            padding: 15px;
+            background-color: #1f2937;
+            color: white;
             margin-top: 40px;
         }
 
-        @media(max-width:768px){
-            nav {
-                flex-direction: column;
-            }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
     </style>
@@ -116,120 +86,92 @@
 
 <body>
 
-<nav>
-    <h2>Shrinidhi S</h2>
-    <div>
-        <a href="#profile">Profile</a>
-        <a href="#academics">Academics</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<div class="hero">
+<header>
     <h1>Shrinidhi S</h1>
-    <p>Computer Science Engineering Student | CGPA: 9.8</p>
     <p>Roll No: RA2411003050165</p>
-    <a href="https://www.linkedin.com/in/shrinidhi-s-82038b329" target="_blank" class="linkedin-btn">
-        Connect on LinkedIn
-    </a>
-</div>
+    <p>Email: sshrinidhi125@gmail.com</p>
+    <p>CGPA: 9.8</p>
+    <p>
+        <a href="https://www.linkedin.com/in/shrinidhi-s-82038b329" target="_blank" style="color:#93c5fd;">
+            LinkedIn Profile
+        </a>
+    </p>
+</header>
 
-<section id="profile">
+<section>
     <h2>Student Profile</h2>
 
-    <div class="card">
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Programming in Java, Python, C, C++</li>
-            <li>Database Management (SQL)</li>
-            <li>Data Structures & Algorithms</li>
-            <li>Object-Oriented Programming</li>
-            <li>Version Control (Git)</li>
-            <li>Basic Machine Learning Concepts</li>
-        </ul>
-    </div>
+    <h3>Technical Skills</h3>
+    <ul>
+        <li>Programming in Java, Python, C, C++</li>
+        <li>Database Management (SQL)</li>
+        <li>Data Structures & Algorithms</li>
+        <li>Object-Oriented Programming</li>
+        <li>Version Control (Git)</li>
+        <li>Basic Machine Learning Concepts</li>
+    </ul>
 
-    <div class="card">
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Effective Communication</li>
-            <li>Strong Analytical Skills</li>
-            <li>Collaborative Team Player</li>
-            <li>Good Time Planning</li>
-            <li>Adaptable to New Technologies</li>
-        </ul>
-    </div>
+    <h3>Soft Skills</h3>
+    <ul>
+        <li>Effective Communication</li>
+        <li>Strong Analytical Skills</li>
+        <li>Collaborative Team Player</li>
+        <li>Good Time Planning</li>
+        <li>Adaptable to New Technologies</li>
+    </ul>
 </section>
 
-<section id="academics">
+<section>
     <h2>Academic Details</h2>
-
-    <div class="card">
-        <p><strong>Semester 1 GPA:</strong> 9.773</p>
-        <p><strong>Semester 2 GPA:</strong> 10.00</p>
-        <p><strong>Semester 3 GPA:</strong> 9.652</p>
-        <p><strong>Overall CGPA:</strong> 9.8</p>
-    </div>
+    <p><strong>Semester 1:</strong> 9.773</p>
+    <p><strong>Semester 2:</strong> 10.00</p>
+    <p><strong>Semester 3:</strong> 9.652</p>
+    <p><strong>Overall CGPA:</strong> 9.8</p>
 </section>
 
-<section id="projects">
+<section>
     <h2>Projects</h2>
 
-    <div class="card">
+    <div class="project">
         <h3>Novel Hit-Density-Aware Adaptive Cache Architecture</h3>
         <p>
             Designed and implemented a dual-partition adaptive cache system 
             balancing recency-based (LRU) and frequency-based (LFU) policies.
         </p>
         <p>
-            Introduced a lightweight Hit Density metric (Hits / Size) to compare 
-            partition efficiency and automatically adjust cache boundaries in real-time.
+            Introduced a lightweight Hit Density metric (Hits / Size) 
+            to dynamically adjust cache boundaries in real-time.
         </p>
         <p>
-            Achieved improved hit rate performance under dynamic workloads 
-            compared to static LRU and LFU policies.
+            Achieved improved hit rate performance under dynamic workloads.
         </p>
         <p><strong>Tools Used:</strong> Python, Data Structures, Cache Replacement Algorithms, Simulation Testing, VS Code</p>
     </div>
 
-    <div class="card">
+    <div class="project">
         <h3>Student Skill Gap Analysis Dashboard</h3>
         <p>
-            Developed a web-based dashboard that analyzes and visualizes the gap 
-            between a student’s current skills and required job skills.
+            Developed a web-based dashboard that analyzes and visualizes 
+            the gap between student skills and job-role requirements.
         </p>
+
         <ul>
             <li>Skill comparison analysis</li>
             <li>Gap percentage calculation</li>
             <li>Visual charts for strengths & weaknesses</li>
             <li>Role-based skill recommendations</li>
         </ul>
+
         <p><strong>Tools Used:</strong> Python (Flask), HTML, CSS, JSON, JavaScript, VS Code</p>
     </div>
-
 </section>
-    
-<section id="certificates">
+
+<section>
     <h2>Certificates</h2>
 
-    <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
-        <img src="images/certificate1.jpg" width="300">
-        <img src="images/certificate2.jpg" width="300">
-    </div>
-</section>
-    
-<section id="contact">
-    <h2>Contact</h2>
-
-    <div class="card" style="text-align:center;">
-        <p>Email: sshrinidhi125@gmail.com</p>
-        <p>
-            LinkedIn: 
-            <a href="https://www.linkedin.com/in/shrinidhi-s-82038b329" target="_blank">
-                View Profile
-            </a>
-        </p>
+    <div class="certificates">
+        <img src="certificate1.jpg" alt="Certificate 1">
+        <img src="certificate2.jpg" alt="Certificate 2">
     </div>
 </section>
 
