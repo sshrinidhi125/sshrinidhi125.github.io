@@ -3,7 +3,7 @@
 <head>
     <title>Shrinidhi S | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
         * {
             margin: 0;
@@ -13,82 +13,84 @@
         }
 
         body {
-            background: #f5f7fa;
+            background: #f4f6f9;
             color: #333;
-        }
-
-        /* Navigation */
-        nav {
-            background: #111827;
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        nav h2 {
-            font-weight: 500;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #60a5fa;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #3b82f6, #6366f1);
-            color: white;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 80px 20px;
+            color: white;
+            padding: 20px;
         }
 
         .hero h1 {
-            font-size: 42px;
+            font-size: 48px;
         }
 
         .hero p {
-            margin-top: 10px;
+            margin-top: 15px;
             font-size: 18px;
+            max-width: 600px;
         }
 
-        /* Sections */
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid white;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover {
+            background: white;
+            color: black;
+        }
+
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             max-width: 1000px;
             margin: auto;
         }
 
         h2 {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             color: #1f2937;
         }
 
-        /* Card Style */
-        .card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
+        /* Certificates */
+        .certificates {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .certificates img {
+            width: 350px;
             border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             transition: 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        ul {
-            margin-top: 10px;
-            padding-left: 20px;
+        .certificates img:hover {
+            transform: scale(1.05);
         }
 
         footer {
@@ -99,100 +101,45 @@
         }
 
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-            }
-            nav div {
-                margin-top: 10px;
+            .hero h1 {
+                font-size: 32px;
             }
         }
     </style>
 </head>
+
 <body>
 
-<nav>
-    <h2>Shrinidhi S</h2>
-    <div>
-        <a href="#about">About</a>
-        <a href="#academics">Academics</a>
-        <a href="#projects">Projects</a>
-    </div>
-</nav>
-
-<div class="hero">
-    <h1>Hi, I'm Shrinidhi </h1>
-    <p>Computer Science Engineering Student</p>
-    <p>Email: sshrinidhi125@gmail.com</p>
-</div>
-
-<section id="about">
-    <h2>Student Profile</h2>
-
-    <div class="card">
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Java, Python, C, C++</li>
-            <li>SQL & Database Management</li>
-            <li>Data Structures & Algorithms</li>
-            <li>Object-Oriented Programming</li>
-            <li>Git & Version Control</li>
-            <li>Basic Machine Learning</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Effective Communication</li>
-            <li>Strong Analytical Skills</li>
-            <li>Collaborative Team Player</li>
-            <li>Good Time Planning</li>
-            <li>Adaptable to New Technologies</li>
-        </ul>
-    </div>
-</section>
-
-<section id="academics">
-    <h2>Academic Details</h2>
-
-    <div class="card">
-        <p><strong>Semester 1 GPA:</strong> 9.773</p>
-        <p><strong>Semester 2 GPA:</strong> 10.00</p>
-        <p><strong>Semester 3 GPA:</strong> 9.652</p>
-        <p><strong>Overall CGPA:</strong> 9.8</p>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>Novel Hit-Density-Aware Adaptive Cache Architecture</h3>
+    <div class="hero">
+        <h1>Shrinidhi S</h1>
         <p>
-            Designed a dual-partition adaptive cache system balancing LRU and LFU
-            policies using a Hit Density metric (Hits / Size).
+            Computer Science Engineering Student with strong academic performance (CGPA: 9.8),
+            passionate about software development, adaptive systems, and data-driven solutions.
         </p>
-        <p>
-            Improved stability under dynamic workloads and achieved better hit rate
-            compared to static policies.
-        </p>
-        <p><strong>Tools:</strong> Python, Data Structures, Simulation Testing</p>
+
+        <div class="buttons">
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 
-    <div class="card">
-        <h3>Student Skill Gap Analysis Dashboard</h3>
-        <p>
-            Built a Flask-based web dashboard to analyze skill gaps between
-            students and job roles with visualization and recommendations.
-        </p>
-        <p><strong>Tools:</strong> Python (Flask), HTML, CSS, JS, JSON</p>
-    </div>
+    <section id="certificates">
+        <h2>Certificates</h2>
 
-</section>
+        <div class="certificates">
+            <img src="images/certificate1.jpg">
+            <img src="images/certificate2.jpg">
+        </div>
+    </section>
 
-<footer>
-    © 2026 Shrinidhi S | Portfolio Website
-</footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p style="text-align:center;">Email: sshrinidhi125@gmail.com</p>
+    </section>
+
+    <footer>
+        © 2026 Shrinidhi S | Portfolio
+    </footer>
 
 </body>
 </html>
