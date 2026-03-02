@@ -3,7 +3,7 @@
 <head>
     <title>Shrinidhi S | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
         * {
             margin: 0;
@@ -13,21 +13,21 @@
         }
 
         body {
-            background: #f5f7fa;
+            background-color: #f4f6f9;
             color: #333;
+            line-height: 1.6;
         }
 
         nav {
             background: #111827;
-            padding: 15px 50px;
+            padding: 15px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: white;
         }
 
         nav h2 {
-            font-weight: 500;
+            color: white;
         }
 
         nav a {
@@ -49,12 +49,27 @@
         }
 
         .hero h1 {
-            font-size: 42px;
+            font-size: 40px;
         }
 
         .hero p {
             margin-top: 10px;
             font-size: 18px;
+        }
+
+        .linkedin-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0A66C2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .linkedin-btn:hover {
+            background: #004182;
         }
 
         section {
@@ -72,14 +87,9 @@
         .card {
             background: white;
             padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
         }
 
         ul {
@@ -87,55 +97,20 @@
             padding-left: 20px;
         }
 
-        /* Certificates */
-        .certificates {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .certificates img {
-            width: 320px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        .certificates img:hover {
-            transform: scale(1.05);
-        }
-
-        .linkedin-btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #0A66C2;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .linkedin-btn:hover {
-            background: #004182;
-        }
-
         footer {
-            text-align: center;
-            padding: 20px;
             background: #111827;
             color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
 
-        @media (max-width: 768px) {
+        @media(max-width:768px){
             nav {
                 flex-direction: column;
             }
-            nav div {
-                margin-top: 10px;
-            }
         }
+
     </style>
 </head>
 
@@ -144,35 +119,34 @@
 <nav>
     <h2>Shrinidhi S</h2>
     <div>
-        <a href="#about">About</a>
+        <a href="#profile">Profile</a>
         <a href="#academics">Academics</a>
         <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
 <div class="hero">
-    <h1>Hi, I'm Shrinidhi 👋</h1>
+    <h1>Shrinidhi S</h1>
     <p>Computer Science Engineering Student | CGPA: 9.8</p>
-    <p>Email: sshrinidhi125@gmail.com</p>
+    <p>Roll No: RA2411003050165</p>
     <a href="https://www.linkedin.com/in/shrinidhi-s-82038b329" target="_blank" class="linkedin-btn">
         Connect on LinkedIn
     </a>
 </div>
 
-<section id="about">
+<section id="profile">
     <h2>Student Profile</h2>
 
     <div class="card">
         <h3>Technical Skills</h3>
         <ul>
-            <li>Java, Python, C, C++</li>
-            <li>SQL & Database Management</li>
+            <li>Programming in Java, Python, C, C++</li>
+            <li>Database Management (SQL)</li>
             <li>Data Structures & Algorithms</li>
             <li>Object-Oriented Programming</li>
-            <li>Git & Version Control</li>
-            <li>Basic Machine Learning</li>
+            <li>Version Control (Git)</li>
+            <li>Basic Machine Learning Concepts</li>
         </ul>
     </div>
 
@@ -205,38 +179,40 @@
     <div class="card">
         <h3>Novel Hit-Density-Aware Adaptive Cache Architecture</h3>
         <p>
-            Designed a dual-partition adaptive cache system balancing LRU and LFU
-            policies using a Hit Density metric (Hits / Size).
+            Designed and implemented a dual-partition adaptive cache system 
+            balancing recency-based (LRU) and frequency-based (LFU) policies.
         </p>
         <p>
-            Improved stability under dynamic workloads and achieved better hit rate
-            compared to static policies.
+            Introduced a lightweight Hit Density metric (Hits / Size) to compare 
+            partition efficiency and automatically adjust cache boundaries in real-time.
         </p>
-        <p><strong>Tools:</strong> Python, Data Structures, Simulation Testing</p>
+        <p>
+            Achieved improved hit rate performance under dynamic workloads 
+            compared to static LRU and LFU policies.
+        </p>
+        <p><strong>Tools Used:</strong> Python, Data Structures, Cache Replacement Algorithms, Simulation Testing, VS Code</p>
     </div>
 
     <div class="card">
         <h3>Student Skill Gap Analysis Dashboard</h3>
         <p>
-            Built a Flask-based web dashboard to analyze skill gaps between
-            students and job roles with visualization and recommendations.
+            Developed a web-based dashboard that analyzes and visualizes the gap 
+            between a student’s current skills and required job skills.
         </p>
-        <p><strong>Tools:</strong> Python (Flask), HTML, CSS, JS, JSON</p>
+        <ul>
+            <li>Skill comparison analysis</li>
+            <li>Gap percentage calculation</li>
+            <li>Visual charts for strengths & weaknesses</li>
+            <li>Role-based skill recommendations</li>
+        </ul>
+        <p><strong>Tools Used:</strong> Python (Flask), HTML, CSS, JSON, JavaScript, VS Code</p>
     </div>
 
-</section>
-
-<section id="certificates">
-    <h2>Certificates</h2>
-
-    <div class="certificates">
-        <img src="images/certificate1.jpg">
-        <img src="images/certificate2.jpg">
-    </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
+
     <div class="card" style="text-align:center;">
         <p>Email: sshrinidhi125@gmail.com</p>
         <p>
@@ -249,7 +225,7 @@
 </section>
 
 <footer>
-    © 2026 Shrinidhi S | Portfolio Website
+    © 2026 Shrinidhi S | Professional Portfolio
 </footer>
 
 </body>
