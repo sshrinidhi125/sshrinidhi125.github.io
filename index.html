@@ -53,7 +53,6 @@
             border: 1px solid #ddd;
         }
 
-        /* Tabs */
         .tabs {
             display: flex;
             justify-content: center;
@@ -117,21 +116,21 @@
 
     <h3>Technical Skills</h3>
     <ul>
-        <li>Java, Python, C, C++</li>
-        <li>SQL & Database Management</li>
+        <li>Programming in Java, Python, C, C++</li>
+        <li>Database Management (SQL)</li>
         <li>Data Structures & Algorithms</li>
-        <li>OOP Concepts</li>
-        <li>Git</li>
-        <li>Machine Learning (Basics)</li>
+        <li>Object-Oriented Programming</li>
+        <li>Version Control (Git)</li>
+        <li>Basic Machine Learning Concepts</li>
     </ul>
 
     <h3>Soft Skills</h3>
     <ul>
-        <li>Communication</li>
-        <li>Analytical Thinking</li>
-        <li>Teamwork</li>
-        <li>Time Management</li>
-        <li>Adaptability</li>
+        <li>Effective Communication</li>
+        <li>Strong Analytical Skills</li>
+        <li>Collaborative Team Player</li>
+        <li>Good Time Planning</li>
+        <li>Adaptable to New Technologies</li>
     </ul>
 </section>
 
@@ -146,9 +145,6 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="tab-content" style="display:none;">
-    <h2>Projects</h2>
-
-    <section id="projects" class="tab-content" style="display:none;">
     <h2>Projects</h2>
 
     <div class="project">
@@ -192,7 +188,7 @@
     <div class="certificates">
         <img src="certificate1.jpg" alt="Certificate 1">
         <img src="certificate2.png" alt="Certificate 2">
-        <img src="snowflake.jpg" alt="Certificate 3">
+        <img src="snowflake.png" alt="Snowflake Certificate">
     </div>
 </section>
 
@@ -200,14 +196,10 @@
     © 2026 Shrinidhi S | Portfolio
 </footer>
 
-<!-- JavaScript -->
 <script>
 function showSection(sectionId) {
     const sections = document.querySelectorAll('.tab-content');
-    
-    sections.forEach(section => {
-        section.style.display = "none";
-    });
+    sections.forEach(section => section.style.display = "none");
 
     const active = document.getElementById(sectionId);
     if (active) {
@@ -215,7 +207,6 @@ function showSection(sectionId) {
     }
 }
 
-// ✅ VERY IMPORTANT: Show profile by default on load
 window.onload = function() {
     showSection('profile');
 }
