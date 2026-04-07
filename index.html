@@ -204,9 +204,20 @@
 <script>
 function showSection(sectionId) {
     const sections = document.querySelectorAll('.tab-content');
-    sections.forEach(section => section.style.display = 'none');
+    
+    sections.forEach(section => {
+        section.style.display = "none";
+    });
 
-    document.getElementById(sectionId).style.display = 'block';
+    const active = document.getElementById(sectionId);
+    if (active) {
+        active.style.display = "block";
+    }
+}
+
+// ✅ VERY IMPORTANT: Show profile by default on load
+window.onload = function() {
+    showSection('profile');
 }
 </script>
 
